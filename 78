@@ -1,0 +1,7 @@
+ss = 'h'
+while ss != 'q':
+    ss = input()
+    if ss != 'q':
+        print(ss)
+print('q')
+#원하는 문자가 입력될 때까지 반복 출력하기
