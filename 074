@@ -1,0 +1,8 @@
+n = input()
+p = 97
+output = ''
+while p<=ord(n):
+    output = output + chr(p)+' '
+    p = p+1
+print(output)
+#문자 1개 입력받아 알파벳 출력하기

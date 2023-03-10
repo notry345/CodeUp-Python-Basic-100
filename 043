@@ -1,0 +1,4 @@
+a,b = input().split()
+d = float(a)/float(b)
+print(format(d,".3f"))
+#실수 2개 입력받아 나눈 결과 계산하기

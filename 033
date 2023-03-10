@@ -1,0 +1,4 @@
+s = input()
+n = ord(s)
+print(chr(n+1))
+#문자 1개 입력받아 다음 문자 출력하기

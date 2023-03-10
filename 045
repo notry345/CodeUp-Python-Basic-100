@@ -1,0 +1,8 @@
+a,b,c = input().split()
+a=int(a)
+b=int(b)
+c=int(c)
+sum = a+b+c
+avg = format((sum/3),".2f")
+print(sum,avg)
+#정수 3개 입력받아 합과 평균 출력하기

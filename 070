@@ -1,0 +1,12 @@
+n = int(input())
+m = n//3
+if m==1:
+    season = 'spring'
+elif m==2:
+    season = 'summer'
+elif m==3:
+    season = 'fall'
+else:
+    season = 'winter'
+print(season)
+#월 입력받아 계절 출력하기

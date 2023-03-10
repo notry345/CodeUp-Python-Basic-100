@@ -1,0 +1,8 @@
+a,b = input().split()
+a = int(a)
+b = int(b)
+if a<b:
+    print('True')
+else:
+    print('False')
+#정수 2개 입력받아 비교하기1

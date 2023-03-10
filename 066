@@ -1,0 +1,9 @@
+a,b,c = input().split()
+n=(int(a),int(b),int(c))
+for i in range(3):
+    if(n[i]%2==0):
+        print('even')
+    else:
+        print('odd')
+
+#정수 3개 입력받아 짝/홀 출력하기

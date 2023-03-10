@@ -1,0 +1,14 @@
+a,b,c = input().split()
+a=int(a)
+b=int(b)
+c=int(c)
+if a>=b:
+    s=b
+else:
+    s=a
+if s>=c:
+    s=c
+else:
+    s=s
+print(s)
+#정수 3개 입력받아 가장 작은 값 출력하기

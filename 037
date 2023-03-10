@@ -1,0 +1,4 @@
+n = int(input())
+s = input()
+print(n*s)
+#문자 여러 번 출력하기
