@@ -1,0 +1,10 @@
+n = int(input())
+sum = 0
+count = 0
+while(True):
+    count = count+1
+    sum = sum+count
+    if sum>=n:
+        break
+print(count)
+#언제까지 더해야 할까?
