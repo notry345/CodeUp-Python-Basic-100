@@ -1,0 +1,6 @@
+a,r,n = input().split()
+a = int(a)
+r = int(r)
+n = int(n)
+print(r**(n-1)*a)
+#수 나열하기2

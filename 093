@@ -1,0 +1,6 @@
+n = int(input())
+array = list(map(int,input().split()))
+array.reverse()
+for i in array:
+    print(i,end=' ')
+#이상한 출석 번호 부르기2

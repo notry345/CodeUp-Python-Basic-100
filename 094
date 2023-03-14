@@ -1,0 +1,7 @@
+n = int(input())
+array = list(map(int,input().split()))
+min = array[0]
+for i in array:
+    if min>=i: min = i
+print(min)
+#이상한 출석 번호 부르기3

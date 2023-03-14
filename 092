@@ -1,0 +1,9 @@
+n = int(input())
+array = list(map(int,input().split()))
+count = list(int(0) for i in range(0,23))
+for i in range (len(array)):
+    x = count[array[i]-1]+1
+    count[array[i]-1] = x
+for e in count:
+    print(e,end = ' ')
+#이상한 출석 번호 부르기1
