@@ -1,0 +1,30 @@
+lines = []
+for i in range(19):
+    line = list(map(int,input().split()))
+    lines.append(line)
+
+n = int(input())
+xylist = []
+for i in range(n):
+    (x,y) = input().split()
+    (x,y) = (int(x),int(y))
+    xylist.append((x,y))
+
+def opposite(x):
+    if x==0:
+        x=1
+    else:
+        x=0
+    return x
+
+for (x,y) in xylist:
+    for i in range(19):
+        lines[i][y-1] = opposite(lines[i][y-1])
+        lines[x-1][i] = opposite(lines[x-1][i])
+
+for line in lines:
+    for num in line:
+        print(num,end=' ')
+    print()
+    
+#바둑알 십자 뒤집기
