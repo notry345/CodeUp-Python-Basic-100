@@ -1,0 +1,30 @@
+h,w = input().split()
+h = int(h)
+w = int(w)
+n = int(input())
+sticks = []
+for i in range(n):
+    l,d,x,y = input().split()
+    sticks.append((int(l),int(d),int(y),int(x)))
+
+boards = []
+for i in range(h):
+    board = []
+    for j in range(w):
+        board.append(0)
+    boards.append(board)
+
+for stick in sticks:
+    if stick[1]==0:
+        for x in range(stick[2],stick[2]+stick[0]):
+            boards[stick[3]-1][x-1] = 1
+    elif stick[1]==1:
+        for y in range(stick[3],stick[3]+stick[0]):
+            boards[y-1][stick[2]-1] = 1
+        
+
+for board in boards:
+    for num in board:
+        print(num,end=' ')
+    print()
+#설탕과자 뽑기
