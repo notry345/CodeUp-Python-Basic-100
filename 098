@@ -1,0 +1,38 @@
+box=[]
+for i in range(10):
+    line = list(map(int,input().split()))
+    box.append(line)
+
+def move(x,y):
+    global antx
+    global anty
+    if box[x][y+1]==0:
+        box[x][y+1]=9
+        antx = x
+        anty = y+1
+    elif (box[x][y+1]==1 and box[x+1][y]==0):
+        box[x+1][y]=9
+        antx = x+1
+        anty = y
+    elif box[x][y+1]==2:
+        box[x][y+1]=9
+        end = True
+    elif (box[x][y+1]==1 and box[x+1][y]==2):
+        box[x+1][y]=9
+        end = True
+    else:
+        end = True
+        
+antx = 1
+anty =1
+box[1][1]= 9
+end = False
+
+for i in range(300):
+    move(antx,anty)
+
+for line in box:
+    for num in line:
+        print(num,end=' ')
+    print()
+#성실한 개미
